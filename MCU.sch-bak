@@ -15,30 +15,6 @@ Comment4 ""
 $EndDescr
 Text Label 5150 2150 2    50   ~ 0
 SLOOP_EN
-Text Label 1350 1350 0    50   ~ 0
-SLOOP1_IN
-Text Label 1350 1450 0    50   ~ 0
-SLOOP1_OUT
-Text Label 1350 1700 0    50   ~ 0
-AIRS+
-Text Label 1350 1800 0    50   ~ 0
-AIRS-
-Text HLabel 1250 1350 0    50   Input ~ 0
-SLOOP1_IN
-Text HLabel 1250 1450 0    50   Input ~ 0
-SLOOP1_OUT
-Text HLabel 1250 1700 0    50   Input ~ 0
-AIRS+
-Text HLabel 1250 1800 0    50   Input ~ 0
-AIRS-
-Wire Wire Line
-	1350 1800 1250 1800
-Wire Wire Line
-	1350 1700 1250 1700
-Wire Wire Line
-	1350 1450 1250 1450
-Wire Wire Line
-	1350 1350 1250 1350
 $Comp
 L Device:LED D2
 U 1 1 5DCA44E3
@@ -82,58 +58,58 @@ F 3 "~" H 3450 2950 50  0001 C CNN
 $EndComp
 Text Label 3200 2950 2    50   ~ 0
 LED_O
-Text HLabel 1250 1100 0    50   Input ~ 0
+Text HLabel 1250 850  0    50   Input ~ 0
 LV_5V
-Text HLabel 1250 1200 0    50   Input ~ 0
+Text HLabel 1250 950  0    50   Input ~ 0
 LV_RTN
 Wire Wire Line
-	1250 1200 1350 1200
+	1250 950  1350 950 
 Wire Wire Line
-	1250 1100 1350 1100
-Text Label 1350 1100 0    50   ~ 0
+	1250 850  1350 850 
+Text Label 1350 850  0    50   ~ 0
 LV_5V
-Text Label 1350 1200 0    50   ~ 0
+Text Label 1350 950  0    50   ~ 0
 LV_RTN
 Text Label 5150 950  2    50   ~ 0
 LV_3V3
-Text HLabel 1250 900  0    50   Input ~ 0
+Text HLabel 1250 650  0    50   Input ~ 0
 LV_24V
 Wire Wire Line
-	1250 900  1350 900 
-Text Label 1350 900  0    50   ~ 0
+	1250 650  1350 650 
+Text Label 1350 650  0    50   ~ 0
 LV_24V
 Text Label 4800 6200 0    50   ~ 0
 AIRS_STATUS
-Text Label 1350 2200 0    50   ~ 0
+Text Label 1350 1100 0    50   ~ 0
 CHRG_EN
-Text Label 1350 2300 0    50   ~ 0
+Text Label 1350 1200 0    50   ~ 0
 ~CHRG_DETECT
-Text Label 1350 2400 0    50   ~ 0
+Text Label 1350 1300 0    50   ~ 0
 CHRG_CURRENT
-Text Label 1350 1950 0    50   ~ 0
+Text Label 1350 1450 0    50   ~ 0
 SDA_GLV
-Text Label 1350 2050 0    50   ~ 0
+Text Label 1350 1550 0    50   ~ 0
 SCL_GLV
-Text HLabel 1250 2200 0    50   Input ~ 0
+Text HLabel 1250 1100 0    50   Input ~ 0
 CHRG_EN
-Text HLabel 1250 2300 0    50   Input ~ 0
+Text HLabel 1250 1200 0    50   Input ~ 0
 ~CHRG_DETECT
-Text HLabel 1250 2400 0    50   Input ~ 0
+Text HLabel 1250 1300 0    50   Input ~ 0
 CHRG_CURRENT
-Text HLabel 1250 1950 0    50   Input ~ 0
+Text HLabel 1250 1450 0    50   Input ~ 0
 SDA_GLV
-Text HLabel 1250 2050 0    50   Input ~ 0
+Text HLabel 1250 1550 0    50   Input ~ 0
 SCL_GLV
 Wire Wire Line
-	1350 2200 1250 2200
+	1350 1100 1250 1100
 Wire Wire Line
-	1250 2300 1350 2300
+	1250 1200 1350 1200
 Wire Wire Line
-	1350 2400 1250 2400
+	1350 1300 1250 1300
 Wire Wire Line
-	1250 1950 1350 1950
+	1250 1450 1350 1450
 Wire Wire Line
-	1350 2050 1250 2050
+	1350 1550 1250 1550
 Text Label 5150 1750 2    50   ~ 0
 CANTX
 Text Label 5150 1850 2    50   ~ 0
@@ -237,18 +213,18 @@ F 3 "~" H 3450 2550 50  0001 C CNN
 	1    3450 2550
 	0    -1   1    0   
 $EndComp
-Text Label 1350 2550 0    50   ~ 0
+Text Label 2850 1250 0    50   ~ 0
 CAN_H
-Text Label 1350 2650 0    50   ~ 0
+Text Label 2850 1350 0    50   ~ 0
 CAN_L
-Text HLabel 1250 2550 0    50   Input ~ 0
+Text HLabel 2750 1250 0    50   Input ~ 0
 CAN_H
-Text HLabel 1250 2650 0    50   Input ~ 0
+Text HLabel 2750 1350 0    50   Input ~ 0
 CAN_L
 Wire Wire Line
-	1250 2550 1350 2550
+	2750 1250 2850 1250
 Wire Wire Line
-	1350 2650 1250 2650
+	2850 1350 2750 1350
 Text Label 5150 1050 2    50   ~ 0
 ~RESET
 Text Label 5150 2750 2    50   ~ 0
@@ -288,13 +264,13 @@ Wire Wire Line
 	1550 3700 1450 3700
 Text Label 1550 3550 2    50   ~ 0
 BTN_LEFT_MCU
-Text Label 1550 4150 2    50   ~ 0
-BTN_RIGHT_MCU
-Text Label 1550 4750 2    50   ~ 0
-BTN_UP_MCU
-Text Label 1550 5350 2    50   ~ 0
-BTN_DOWN_MCU
 Text Label 1550 5950 2    50   ~ 0
+BTN_RIGHT_MCU
+Text Label 1550 4150 2    50   ~ 0
+BTN_UP_MCU
+Text Label 1550 4750 2    50   ~ 0
+BTN_DOWN_MCU
+Text Label 1550 5350 2    50   ~ 0
 BTN_CENTER_MCU
 Text Label 1050 3700 2    50   ~ 0
 LV_RTN
@@ -802,71 +778,71 @@ Wire Notes Line
 	5450 4950 2800 4950
 Wire Notes Line
 	2800 4950 2800 6450
-Text Label 2850 650  0    50   ~ 0
+Text Label 1350 1700 0    50   ~ 0
 BTN_LEFT
-Text Label 2850 750  0    50   ~ 0
+Text Label 1350 1800 0    50   ~ 0
 BTN_RIGHT
-Text Label 2850 850  0    50   ~ 0
+Text Label 1350 1900 0    50   ~ 0
 BTN_UP
-Text Label 2850 950  0    50   ~ 0
+Text Label 1350 2000 0    50   ~ 0
 BTN_DOWN
-Text Label 2850 1050 0    50   ~ 0
+Text Label 1350 2100 0    50   ~ 0
 BTN_CENTER
 Wire Wire Line
-	2750 1050 2850 1050
+	1250 2100 1350 2100
 Wire Wire Line
-	2850 950  2750 950 
+	1350 2000 1250 2000
 Wire Wire Line
-	2750 850  2850 850 
+	1250 1900 1350 1900
 Wire Wire Line
-	2850 750  2750 750 
+	1350 1800 1250 1800
 Wire Wire Line
-	2750 650  2850 650 
-Text Label 2850 1200 0    50   ~ 0
-DISP_DIN
-Text Label 2850 1300 0    50   ~ 0
+	1250 1700 1350 1700
+Text Label 2850 2100 0    50   ~ 0
+DISP_MOSI
+Text Label 2850 2000 0    50   ~ 0
 DISP_CLK
-Text Label 2850 1400 0    50   ~ 0
+Text Label 2850 1900 0    50   ~ 0
 DISP_CS
-Text Label 2850 1500 0    50   ~ 0
+Text Label 2850 1800 0    50   ~ 0
 DISP_DC
-Text Label 2850 1600 0    50   ~ 0
-DISP_RST
 Text Label 2850 1700 0    50   ~ 0
-DISP_BUSY
-Text HLabel 2750 1200 0    50   Input ~ 0
-DISP_DIN
-Text HLabel 2750 1300 0    50   Input ~ 0
-DISP_CLK
-Text HLabel 2750 1400 0    50   Input ~ 0
-DISP_CS
-Text HLabel 2750 1500 0    50   Input ~ 0
-DISP_DC
-Text HLabel 2750 1600 0    50   Input ~ 0
 DISP_RST
+Text Label 2850 1600 0    50   ~ 0
+TS_ACTIVE
+Text HLabel 2750 2100 0    50   Input ~ 0
+DISP_MOSI
+Text HLabel 2750 2000 0    50   Input ~ 0
+DISP_CLK
+Text HLabel 2750 1900 0    50   Input ~ 0
+DISP_CS
+Text HLabel 2750 1800 0    50   Input ~ 0
+DISP_DC
 Text HLabel 2750 1700 0    50   Input ~ 0
-DISP_BUSY
+DISP_RST
+Text HLabel 2750 1600 0    50   Input ~ 0
+TS_ACTIVE
 Wire Wire Line
-	2750 1700 2850 1700
+	2750 1600 2850 1600
 Wire Wire Line
-	2850 1600 2750 1600
+	2850 1700 2750 1700
 Wire Wire Line
-	2750 1500 2850 1500
+	2750 1800 2850 1800
 Wire Wire Line
-	2850 1400 2750 1400
+	2850 1900 2750 1900
 Wire Wire Line
-	2750 1300 2850 1300
+	2750 2000 2850 2000
 Wire Wire Line
-	2850 1200 2750 1200
+	2850 2100 2750 2100
 Text Label 3900 5500 2    50   ~ 0
 SDA_GLV
 Text Label 3900 5400 2    50   ~ 0
 SCL_GLV
-Text Label 1350 2750 0    50   ~ 0
+Text Label 2850 1450 0    50   ~ 0
 CAN_SHIELD
 Wire Wire Line
-	1350 2750 1250 2750
-Text HLabel 1250 2750 0    50   Input ~ 0
+	2850 1450 2750 1450
+Text HLabel 2750 1450 0    50   Input ~ 0
 CAN_SHIELD
 Wire Wire Line
 	5150 2350 5250 2350
@@ -888,21 +864,21 @@ Wire Wire Line
 	5250 1650 5150 1650
 Wire Wire Line
 	6950 2150 6850 2150
-Text Label 1350 1000 0    50   ~ 0
+Text Label 1350 750  0    50   ~ 0
 LV_3V3
-Text HLabel 1250 1000 0    50   Input ~ 0
+Text HLabel 1250 750  0    50   Input ~ 0
 LV_3V3
 Wire Wire Line
-	1250 1000 1350 1000
-Text HLabel 2750 1050 0    50   Input ~ 0
+	1250 750  1350 750 
+Text HLabel 1250 2100 0    50   Input ~ 0
 BTN_CENTER
-Text HLabel 2750 950  0    50   Input ~ 0
+Text HLabel 1250 2000 0    50   Input ~ 0
 BTN_DOWN
-Text HLabel 2750 850  0    50   Input ~ 0
+Text HLabel 1250 1900 0    50   Input ~ 0
 BTN_UP
-Text HLabel 2750 750  0    50   Input ~ 0
+Text HLabel 1250 1800 0    50   Input ~ 0
 BTN_RIGHT
-Text HLabel 2750 650  0    50   Input ~ 0
+Text HLabel 1250 1700 0    50   Input ~ 0
 BTN_LEFT
 Text Label 6950 1850 0    50   ~ 0
 BTN_LEFT_MCU
@@ -916,13 +892,13 @@ Text Label 5150 1550 2    50   ~ 0
 BTN_CENTER_MCU
 Text Label 2050 3850 0    50   ~ 0
 BTN_LEFT
-Text Label 2050 4450 0    50   ~ 0
-BTN_RIGHT
-Text Label 2050 5050 0    50   ~ 0
-BTN_UP
-Text Label 2050 5650 0    50   ~ 0
-BTN_DOWN
 Text Label 2050 6250 0    50   ~ 0
+BTN_RIGHT
+Text Label 2050 4450 0    50   ~ 0
+BTN_UP
+Text Label 2050 5050 0    50   ~ 0
+BTN_DOWN
+Text Label 2050 5650 0    50   ~ 0
 BTN_CENTER
 Text Label 2050 6100 0    50   ~ 0
 LV_3V3
@@ -1174,12 +1150,6 @@ Wire Wire Line
 	8700 4250 8800 4250
 Wire Wire Line
 	3000 7450 3100 7450
-Text HLabel 1250 1550 0    50   Input ~ 0
-SLOOP2
-Text Label 1350 1550 0    50   ~ 0
-SLOOP2
-Wire Wire Line
-	1350 1550 1250 1550
 Text Label 4800 6000 0    50   ~ 0
 SLOOP1_STATUS
 Text Label 4800 6100 0    50   ~ 0
@@ -1452,10 +1422,10 @@ Text Label 3900 6100 2    50   ~ 0
 IO_INT
 Wire Wire Line
 	3900 6100 4000 6100
-Text HLabel 2750 1950 0    50   Input ~ 0
+Text HLabel 1250 2350 0    50   Input ~ 0
 RST_GLV_SEG-
 Wire Wire Line
-	2750 1950 2850 1950
+	1250 2350 1350 2350
 Text Label 4800 5800 0    50   ~ 0
 RST_GLV_SEG-
 Connection ~ 6050 4200
@@ -1511,14 +1481,14 @@ Text Notes 7700 4600 2    50   ~ 0
 I2C Address:\n1101000 (104)
 Text Label 4800 5700 0    50   ~ 0
 RST_GLV_SEG+
-Text Label 2850 1850 0    50   ~ 0
+Text Label 1350 2250 0    50   ~ 0
 RST_GLV_SEG+
-Text Label 2850 1950 0    50   ~ 0
+Text Label 1350 2350 0    50   ~ 0
 RST_GLV_SEG-
-Text HLabel 2750 1850 0    50   Input ~ 0
+Text HLabel 1250 2250 0    50   Input ~ 0
 RST_GLV_SEG+
 Wire Wire Line
-	2750 1850 2850 1850
+	1250 2250 1350 2250
 Wire Wire Line
 	8700 6050 8800 6050
 Wire Wire Line
@@ -1721,18 +1691,18 @@ Wire Wire Line
 Connection ~ 9600 4250
 Wire Wire Line
 	9600 4250 9650 4250
-Text HLabel 1250 650  0    50   Input ~ 0
+Text HLabel 1250 2500 0    50   Input ~ 0
 GLV_24V
 Wire Wire Line
-	1250 650  1350 650 
-Text Label 1350 650  0    50   ~ 0
+	1250 2500 1350 2500
+Text Label 1350 2500 0    50   ~ 0
 GLV_24V
-Text Label 1350 750  0    50   ~ 0
+Text Label 1350 2600 0    50   ~ 0
 GLV_RTN
-Text HLabel 1250 750  0    50   Input ~ 0
+Text HLabel 1250 2600 0    50   Input ~ 0
 GLV_RTN
 Wire Wire Line
-	1250 750  1350 750 
+	1250 2600 1350 2600
 Text Label 4800 5900 0    50   ~ 0
 GLV_STATUS
 NoConn ~ 5250 1150
@@ -1855,4 +1825,34 @@ Text Label 3200 2550 2    50   ~ 0
 LED_G
 Text Notes 10300 1800 2    50   ~ 0
 ~~10uA draw
+Wire Wire Line
+	2850 850  2750 850 
+Text Label 2850 850  0    50   ~ 0
+SLOOP2
+Text HLabel 2750 850  0    50   Input ~ 0
+SLOOP2
+Wire Wire Line
+	2850 650  2750 650 
+Wire Wire Line
+	2850 750  2750 750 
+Wire Wire Line
+	2850 1000 2750 1000
+Wire Wire Line
+	2850 1100 2750 1100
+Text HLabel 2750 1100 0    50   Input ~ 0
+AIRS-
+Text HLabel 2750 1000 0    50   Input ~ 0
+AIRS+
+Text HLabel 2750 750  0    50   Input ~ 0
+SLOOP1_OUT
+Text HLabel 2750 650  0    50   Input ~ 0
+SLOOP1_IN
+Text Label 2850 1100 0    50   ~ 0
+AIRS-
+Text Label 2850 1000 0    50   ~ 0
+AIRS+
+Text Label 2850 750  0    50   ~ 0
+SLOOP1_OUT
+Text Label 2850 650  0    50   ~ 0
+SLOOP1_IN
 $EndSCHEMATC

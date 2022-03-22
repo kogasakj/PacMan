@@ -18,9 +18,9 @@ CHRG_IN+
 Text HLabel 1250 1300 0    50   Input ~ 0
 CHRG_IN-
 Text HLabel 1250 1450 0    50   Input ~ 0
-CHRG_OUT+
+PACK+
 Text HLabel 1250 1550 0    50   Input ~ 0
-CHRG_OUT-
+PACK-
 Text Label 1350 1200 0    50   ~ 0
 CHRG_IN+
 Text Label 1350 1300 0    50   ~ 0
@@ -30,9 +30,9 @@ Wire Wire Line
 Wire Wire Line
 	1350 1200 1250 1200
 Text Label 1350 1450 0    50   ~ 0
-CHRG_OUT+
+PACK+
 Text Label 1350 1550 0    50   ~ 0
-CHRG_OUT-
+PACK-
 Wire Wire Line
 	1250 1450 1350 1450
 Wire Wire Line
@@ -56,7 +56,7 @@ CurrentSensor+
 Wire Wire Line
 	4950 2350 5050 2350
 Text Label 4950 2350 2    50   ~ 0
-CHRG_OUT-
+PACK-
 $Comp
 L Lafayette_Electric_Car_Internals:ACHS-7122 U8
 U 1 1 5DC34EC2
@@ -73,7 +73,7 @@ F 7 "516-4081-ND" H 5350 4200 50  0001 C CNN "Vendor Part"
 	1    0    0    -1  
 $EndComp
 Text Label 5000 3800 2    50   ~ 0
-CHRG_OUT+
+PACK+
 $Comp
 L Device:C C12
 U 1 1 5DC374AD

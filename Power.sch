@@ -945,66 +945,6 @@ Wire Wire Line
 	8500 2750 8700 2750
 Wire Wire Line
 	8500 3150 8700 3150
-Text Label 1250 2300 0    50   ~ 0
-DCHRG_A2
-Text Label 1250 2200 0    50   ~ 0
-DCHRG_A1
-Text Label 1250 2450 0    50   ~ 0
-SDA_TSV
-Text Label 1250 2550 0    50   ~ 0
-SCL_TSV
-Text HLabel 1150 2200 0    50   Input ~ 0
-DCHRG_A1
-Text HLabel 1150 2300 0    50   Input ~ 0
-DCHRG_A2
-Text HLabel 1150 2450 0    50   Input ~ 0
-SDA_TSV
-Text HLabel 1150 2550 0    50   Input ~ 0
-SCL_TSV
-Wire Wire Line
-	1150 2450 1250 2450
-Wire Wire Line
-	1250 2550 1150 2550
-Wire Wire Line
-	1150 2300 1250 2300
-Wire Wire Line
-	1250 2200 1150 2200
-Text HLabel 1150 1850 0    50   Input ~ 0
-9V_SEG-
-Text HLabel 1150 2050 0    50   Input ~ 0
-RTN_SEG-
-Text HLabel 1150 1500 0    50   Input ~ 0
-9V_SEG+
-Text HLabel 1150 1700 0    50   Input ~ 0
-RTN_SEG+
-Text Label 1250 1850 0    50   ~ 0
-9V_SEG-
-Text Label 1250 1500 0    50   ~ 0
-9V_SEG+
-Text HLabel 1150 1950 0    50   Input ~ 0
-5V_SEG-
-Text HLabel 1150 1600 0    50   Input ~ 0
-5V_SEG+
-Text Label 1250 1950 0    50   ~ 0
-5V_SEG-
-Text Label 1250 2050 0    50   ~ 0
-RTN_SEG-
-Text Label 1250 1600 0    50   ~ 0
-5V_SEG+
-Text Label 1250 1700 0    50   ~ 0
-RTN_SEG+
-Wire Wire Line
-	1250 1850 1150 1850
-Wire Wire Line
-	1150 1950 1250 1950
-Wire Wire Line
-	1250 2050 1150 2050
-Wire Wire Line
-	1150 1500 1250 1500
-Wire Wire Line
-	1250 1600 1150 1600
-Wire Wire Line
-	1150 1700 1250 1700
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5EDC9A00
@@ -1039,8 +979,6 @@ Wire Wire Line
 	3000 7850 3100 7850
 Wire Wire Line
 	3100 7850 3100 7750
-Text Label 1600 4300 2    50   ~ 0
-PACK_RTN
 Text Label 5250 1850 0    50   ~ 0
 RTN_TSV
 Text Label 3950 1550 2    50   ~ 0
@@ -1112,24 +1050,18 @@ F 7 "" H 2500 7350 50  0001 C CNN "Vendor Part"
 	1    2500 7350
 	-1   0    0    -1  
 $EndComp
-Text Label 1250 1100 0    50   ~ 0
-PACK_RTN
 Text HLabel 1150 1100 0    50   Input ~ 0
-PACK_RTN
-Wire Wire Line
-	1150 1100 1250 1100
-Text HLabel 1150 1250 0    50   Input ~ 0
 5V_TSV
-Text Label 1250 1250 0    50   ~ 0
+Text Label 1250 1100 0    50   ~ 0
 5V_TSV
-Text HLabel 1150 1350 0    50   Input ~ 0
+Text HLabel 1150 1200 0    50   Input ~ 0
 RTN_TSV
-Text Label 1250 1350 0    50   ~ 0
+Text Label 1250 1200 0    50   ~ 0
 RTN_TSV
 Wire Wire Line
-	1250 1250 1150 1250
+	1250 1100 1150 1100
 Wire Wire Line
-	1150 1350 1250 1350
+	1150 1200 1250 1200
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 5E54315E
@@ -1342,4 +1274,66 @@ Text Notes 5400 1300 0    50   ~ 0
 Output gain of 0.5
 Text Notes 7600 1100 0    50   ~ 0
 In current single-supply configuration of INA592, only positive\ndifferential voltage can be measured (only positive discharge\ncurrents). If active balancing is used, this should be changed to\nbe able to measure negative discharge current.
+Text Label 1600 4300 2    50   ~ 0
+PACK_RTN
+Wire Wire Line
+	1150 1700 1250 1700
+Wire Wire Line
+	1250 1600 1150 1600
+Wire Wire Line
+	1150 1500 1250 1500
+Wire Wire Line
+	1250 2050 1150 2050
+Wire Wire Line
+	1150 1950 1250 1950
+Wire Wire Line
+	1250 1850 1150 1850
+Text Label 1250 1700 0    50   ~ 0
+RTN_SEG+
+Text Label 1250 1600 0    50   ~ 0
+5V_SEG+
+Text Label 1250 2050 0    50   ~ 0
+RTN_SEG-
+Text Label 1250 1950 0    50   ~ 0
+5V_SEG-
+Text HLabel 1150 1600 0    50   Input ~ 0
+5V_SEG+
+Text HLabel 1150 1950 0    50   Input ~ 0
+5V_SEG-
+Text Label 1250 1500 0    50   ~ 0
+9V_SEG+
+Text Label 1250 1850 0    50   ~ 0
+9V_SEG-
+Text HLabel 1150 1700 0    50   Input ~ 0
+RTN_SEG+
+Text HLabel 1150 1500 0    50   Input ~ 0
+9V_SEG+
+Text HLabel 1150 2050 0    50   Input ~ 0
+RTN_SEG-
+Text HLabel 1150 1850 0    50   Input ~ 0
+9V_SEG-
+Wire Wire Line
+	1250 2200 1150 2200
+Wire Wire Line
+	1150 2300 1250 2300
+Wire Wire Line
+	1250 2550 1150 2550
+Wire Wire Line
+	1150 2450 1250 2450
+Text HLabel 1150 2550 0    50   Input ~ 0
+SCL_TSV
+Text HLabel 1150 2450 0    50   Input ~ 0
+SDA_TSV
+Text HLabel 1150 2300 0    50   Input ~ 0
+DCHRG_A2
+Text HLabel 1150 2200 0    50   Input ~ 0
+DCHRG_A1
+Text Label 1250 2550 0    50   ~ 0
+SCL_TSV
+Text Label 1250 2450 0    50   ~ 0
+SDA_TSV
+Text Label 1250 2200 0    50   ~ 0
+DCHRG_A1
+Text Label 1250 2300 0    50   ~ 0
+DCHRG_A2
 $EndSCHEMATC
